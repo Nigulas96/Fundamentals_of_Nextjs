@@ -12,15 +12,14 @@ export default async function Blog() {
 
     return (
         <>
-            <h1>Blog</h1>
+            <h1>Blog (ISR Demo)</h1>
 
             <p>Last updated: {new Date().toLocaleString()}</p>
 
-            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+            <ul>
                 {posts.map((post) => (
                     <li key={post.id}>{post.title}</li>
                 ))}
-
             </ul>
         </>
     );
